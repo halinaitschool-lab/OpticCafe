@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://halinaitschool-lab.github.io/OpticCafe/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://halinaitschool-lab.github.io/OpticCafe/project/salon-optyczny-w-centrum-poznania.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://halinaitschool-lab.github.io/OpticCafe/project/optometria-i-badania-wzroku.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://halinaitschool-lab.github.io/OpticCafe/project/ortoptyka-i-rehabilitacja-widzenia.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://halinaitschool-lab.github.io/OpticCafe/project/nowoczesne-rozwiazania-dla-korekcji-wzroku.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://halinaitschool-lab.github.io/OpticCafe/project/dobor-opraw-okularowych.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

@@ -5013,3 +5013,11 @@ h6 {
 
 /* Page-specific inline styles */
 @media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="8fbe59d2-58b6-c124-9a2e-a81d5c7acb8d"] {-webkit-transform:translate3d(0, -69%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -69%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -69%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -69%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="79cddd00-1063-0523-131b-98b7e6807ff2"] {-webkit-transform:translate3d(0, 52%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 52%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 52%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 52%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="778abe4d-a589-7847-c42e-93e8110ac4ea"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="778abe4d-a589-7847-c42e-93e8110ac4ef"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="778abe4d-a589-7847-c42e-93e8110ac4ed"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="778abe4d-a589-7847-c42e-93e8110ac4eb"] {opacity:0;}}
+
+/* Hide Webflow badge */
+.w-webflow-badge {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}

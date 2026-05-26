@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import 'base/tokens.css';
+@import 'vendor/webflow.css';
+
+/* BEM aliases — legacy Webflow classes remain for layout/animation compatibility */
+.header {
+  /* block */
+}
+
+.header__container,
+.header__inner,
+.header__nav,
+.header__link,
+.header__actions {
+  /* elements */
+}
+
+.hero__title,
+.hero__hint,
+.hero__media,
+.hero__image {
+  /* elements */
+}
+
+.about__title,
+.about__text,
+.offer__title,
+.offer__intro,
+.offer-card,
+.team,
+.contact,
+.footer {
+  /* blocks */
+}
+
+@media (min-width: 992px) {
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='8fbe59d2-58b6-c124-9a2e-a81d5c7acb8d'] {
+    transform: translate3d(0, -69%, 0);
+  }
+
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='79cddd00-1063-0523-131b-98b7e6807ff2'] {
+    transform: translate3d(0, 52%, 0);
+  }
+
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='778abe4d-a589-7847-c42e-93e8110ac4ea'],
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='778abe4d-a589-7847-c42e-93e8110ac4ef'],
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='778abe4d-a589-7847-c42e-93e8110ac4ed'],
+  html.w-mod-js:not(.w-mod-ix) [data-w-id='778abe4d-a589-7847-c42e-93e8110ac4eb'] {
+    opacity: 0;
+  }
+}
