@@ -19,6 +19,12 @@ export function initContactForm(doc = document) {
 
     if (!name || !email || !message) {
       showState(success, failure, 'error');
+      const firstInvalid = !name
+        ? form.querySelector('#Name')
+        : !email
+          ? form.querySelector('#Email')
+          : form.querySelector('#Message');
+      firstInvalid?.focus();
       return;
     }
 

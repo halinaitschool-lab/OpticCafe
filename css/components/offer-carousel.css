@@ -94,24 +94,9 @@
   gap: 12px;
 }
 
+/* Dot hit area defined in base/accessibility.css (::after = visual dot) */
 .offer-carousel__dot {
-  width: 10px;
-  height: 10px;
-  padding: 0;
-  border: 1px solid #080808;
-  border-radius: 50%;
-  background: transparent;
   cursor: pointer;
-  transition: background-color var(--transition-base), transform var(--transition-base);
-}
-
-.offer-carousel__dot:hover,
-.offer-carousel__dot--active {
-  background: #080808;
-}
-
-.offer-carousel__dot--active {
-  transform: scale(1.15);
 }
 
 @media (min-width: 992px) {

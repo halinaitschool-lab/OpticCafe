@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 @import 'base/tokens.css';
+@import 'base/accessibility.css';
 @import 'vendor/webflow.css';
 @import 'components/offer-carousel.css';
+@import 'components/process-section.css';
 
 /* BEM aliases — legacy Webflow classes remain for layout/animation compatibility */
 .header {

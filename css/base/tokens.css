@@ -45,7 +45,7 @@ img {
   overflow: clip;
 }
 
-.header__nav[role='navigation'] a:focus-visible,
+.header__nav a:focus-visible,
 .footer__link:focus-visible,
 .button:focus-visible,
 .offer-card:focus-visible {

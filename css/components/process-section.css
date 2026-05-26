@@ -1,0 +1,34 @@
+/* Team section — centered portrait, sized so copy stays readable */
+.process-text-1,
+.process-item-block {
+  position: relative;
+  z-index: 2;
+}
+
+.process-image-block {
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.process-image {
+  width: auto;
+  max-width: min(34vw, 400px);
+  height: auto;
+  max-height: min(52vh, 480px);
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .process-image {
+    max-width: min(42vw, 340px);
+    max-height: min(46vh, 420px);
+  }
+}
+
+@media (max-width: 767px) {
+  .process-image {
+    max-width: min(72vw, 280px);
+    max-height: min(42vh, 340px);
+  }
+}

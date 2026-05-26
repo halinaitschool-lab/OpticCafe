@@ -1,0 +1,107 @@
+/* Readable type scale & interaction targets (WCAG-oriented) */
+:root {
+  --_typography---bodytext--b3: 1rem;
+  --a11y-min-touch: 44px;
+  --a11y-focus-color: #080808;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.process-item-text,
+.contact-text-3,
+.project-item-category,
+.project-item-date,
+.offer-card__desc,
+.hero-text-3,
+.work-text-1,
+.work-text-2,
+.footer-text-1,
+.contact-text-field {
+  font-size: max(1rem, var(--_typography---bodytext--b3, 1rem));
+  line-height: 1.5;
+}
+
+.process-item-text,
+.contact-text-3,
+.project-item-category,
+.project-item-date,
+.offer-card__desc {
+  color: var(--n-333, #333);
+}
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  padding: 0.75rem 1.25rem;
+  background: #080808;
+  color: #fff;
+  font-family: var(--font-body, Poppins, sans-serif);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transform: translateY(-120%);
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+.offer-carousel__dot {
+  width: var(--a11y-min-touch);
+  height: var(--a11y-min-touch);
+  border: 0;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-carousel__dot::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 1px solid #080808;
+  border-radius: 50%;
+  background: transparent;
+  transition: background-color var(--transition-base), transform var(--transition-base);
+}
+
+.offer-carousel__dot:hover::after,
+.offer-carousel__dot--active::after {
+  background: #080808;
+}
+
+.offer-carousel__arrow:focus-visible,
+.offer-carousel__dot:focus-visible,
+.header__menu-toggle:focus-visible,
+.contact-text-field:focus-visible,
+.button-primary:focus-visible,
+.button-primary-2:focus-visible,
+.navbar-link:focus-visible,
+.footer-link:focus-visible,
+.offer-card:focus-visible {
+  outline: 2px solid var(--a11y-focus-color);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

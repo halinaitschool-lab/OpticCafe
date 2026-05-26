@@ -10,10 +10,24 @@ export function initNavigation(doc = document) {
   if (menuOpen && menuClose && menuBlock) {
     menuOpen.setAttribute('role', 'button');
     menuOpen.setAttribute('aria-label', 'Otwórz menu');
+    menuOpen.setAttribute('tabindex', '0');
     menuClose.setAttribute('role', 'button');
     menuClose.setAttribute('aria-label', 'Zamknij menu');
-    menuBlock.setAttribute('role', 'navigation');
-    menuBlock.setAttribute('aria-label', 'Menu główne');
+    menuClose.setAttribute('tabindex', '0');
+
+    [menuOpen, menuClose].forEach((control) => {
+      control.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          control.click();
+        }
+      });
+    });
+
+    if (menuBlock.tagName !== 'NAV' && !menuBlock.getAttribute('role')) {
+      menuBlock.setAttribute('role', 'navigation');
+      menuBlock.setAttribute('aria-label', 'Menu główne');
+    }
   }
 
   doc.querySelectorAll('a[href^="#"]').forEach((anchor) => {

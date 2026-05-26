@@ -119,10 +119,14 @@ class OfferCarousel {
     });
   }
 
+  prefersReducedMotion() {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+
   startAutoScroll() {
     this.stopAutoScroll();
 
-    if (this.manualMode || !this.loop) return;
+    if (this.manualMode || !this.loop || this.prefersReducedMotion()) return;
 
     this.autoScrollTimer = window.setInterval(() => {
       if (this.manualMode || !this.loop) return;
