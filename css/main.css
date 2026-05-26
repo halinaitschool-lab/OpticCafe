@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 @import 'base/tokens.css';
 @import 'vendor/webflow.css';
+@import 'components/offer-carousel.css';
 
 /* BEM aliases — legacy Webflow classes remain for layout/animation compatibility */
 .header {
@@ -40,12 +42,5 @@
 
   html.w-mod-js:not(.w-mod-ix) [data-w-id='79cddd00-1063-0523-131b-98b7e6807ff2'] {
     transform: translate3d(0, 52%, 0);
-  }
-
-  html.w-mod-js:not(.w-mod-ix) [data-w-id='778abe4d-a589-7847-c42e-93e8110ac4ea'],
-  html.w-mod-js:not(.w-mod-ix) [data-w-id='778abe4d-a589-7847-c42e-93e8110ac4ef'],
-  html.w-mod-js:not(.w-mod-ix) [data-w-id='778abe4d-a589-7847-c42e-93e8110ac4ed'],
-  html.w-mod-js:not(.w-mod-ix) [data-w-id='778abe4d-a589-7847-c42e-93e8110ac4eb'] {
-    opacity: 0;
   }
 }

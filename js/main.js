@@ -1,6 +1,7 @@
 import { initAccessibility } from './modules/accessibility.js';
 import { initContactForm } from './modules/form.js';
 import { initNavigation } from './modules/navigation.js';
+import { initOfferCarousel } from './modules/offer-carousel.js';
 import { injectLocalBusinessSchema } from './modules/schema.js';
 
 /**
@@ -10,6 +11,7 @@ function bootstrap() {
   initNavigation();
   initContactForm();
   initAccessibility();
+  initOfferCarousel();
   injectLocalBusinessSchema();
 }
 

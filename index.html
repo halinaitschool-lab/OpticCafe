@@ -116,8 +116,13 @@
 <div class="offer__label project-text-1">NASZA OFERTA</div>
 <div class="offer__intro project-text-2">Poznaj naszą ofertę i wybierz rozwiązania dopasowane do Twoich potrzeb.</div>
 </div>
-<div class="project-collection-list-wrapper w-dyn-list">
-<div role="list" class="project-item-block w-dyn-items">
+<div class="offer-carousel" data-offer-carousel>
+<div class="offer-carousel__body">
+<button type="button" class="offer-carousel__arrow offer-carousel__arrow--prev" aria-label="Poprzednia oferta">
+<i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+</button>
+<div class="offer-carousel__viewport project-collection-list-wrapper w-dyn-list">
+<div role="list" class="offer-carousel__track project-item-block w-dyn-items">
 <div role="listitem" class="project-collection-item w-dyn-item">
 <a aria-label="Zobacz szczegóły oferty" data-w-id="778abe4d-a589-7847-c42e-93e8110ac4e8" href="project/salon-optyczny-w-centrum-poznania.html" class="offer-card project-item w-inline-block">
 <img src="images/1.jpg" alt="Salon optyczny Optic Café w centrum Poznania"   class="offer-card__image project-item-image"/>
@@ -179,6 +184,12 @@
 </a>
 </div>
 </div>
+</div>
+<button type="button" class="offer-carousel__arrow offer-carousel__arrow--next" aria-label="Następna oferta">
+<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+</button>
+</div>
+<div class="offer-carousel__dots" role="tablist" aria-label="Slajdy oferty"></div>
 </div>
 </div>
 </div>
@@ -327,6 +338,8 @@
 </section>
 <script src="js/vendor/jquery.min.js" defer></script>
 <script src="js/vendor/webflow.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
+<script src="js/vendor/horizontal-loop.js" defer></script>
 <script type="module" src="js/main.js"></script>
 </body>
 </html>
