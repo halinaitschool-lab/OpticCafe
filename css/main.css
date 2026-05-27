@@ -2,11 +2,12 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 @import 'base/tokens.css';
 @import 'base/accessibility.css';
-@import 'vendor/webflow.css';
+@import 'vendor/template-base.css';
 @import 'components/offer-carousel.css';
 @import 'components/process-section.css';
+@import 'components/legal.css';
 
-/* BEM aliases — legacy Webflow classes remain for layout/animation compatibility */
+/* BEM aliases — legacy template classes remain for layout/animation compatibility */
 .header {
   /* block */
 }

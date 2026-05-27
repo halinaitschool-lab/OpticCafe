@@ -6,16 +6,19 @@ Static website for **Optic Café** — salon optyczny w Poznaniu (ul. Garbary 65
 
 ```
 css/
-  main.css              # entry stylesheet (BEM + Webflow vendor styles)
-  base/                 # design tokens and utilities
-  vendor/webflow.css    # layout and animation styles from template
+  main.css              # entry stylesheet
+  vendor/template-base.css  # template base + layout utilities
+  base/                 # tokens, accessibility
+  components/           # carousel, legal, process
 js/
   main.js               # app bootstrap (ES modules)
   config/site-config.js # business and SEO constants
-  modules/              # navigation, form, accessibility, schema
-  vendor/               # Webflow runtime, jQuery, fonts
+  modules/              # navigation, form, accessibility, carousel
+  vendor/               # scroll-motion runtime, jQuery, fonts, GSAP (see vendor/README.md)
 project/                # offer detail pages
-images/                 # local media assets
+polityka-prywatnosci.html
+cookies.html
+images/
 robots.txt
 sitemap.xml
 ```
@@ -26,13 +29,16 @@ sitemap.xml
 python3 -m http.server 8765
 ```
 
-Open `http://localhost:8765`.
+Open `http://localhost:8765` and hard-refresh (`Cmd+Shift+R`).
 
-## SEO
+## Scroll motion
+
+Page scroll animations use **`js/vendor/scroll-motion.js`**. The offer carousel uses local **GSAP** (`gsap.min.js` + `horizontal-loop.js`). See `js/vendor/README.md` for the full script list and load order.
+
+## SEO & legal
 
 - Polish meta tags, Open Graph, Twitter cards
 - `LocalBusiness` + `Optician` JSON-LD on homepage
-- `Service` JSON-LD on offer pages
-- `robots.txt` and `sitemap.xml`
+- Polityka prywatności and cookies pages (RODO)
 
 Update canonical URLs in `js/config/site-config.js` when deploying to your final domain.

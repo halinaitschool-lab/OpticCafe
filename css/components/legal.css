@@ -1,0 +1,110 @@
+.legal-page {
+  min-height: 100vh;
+  padding: 120px 24px 80px;
+  background: var(--neutral-color--n-100, #fff);
+}
+
+.legal-page__container {
+  max-width: 720px;
+  margin: 0 auto;
+  font-family: var(--_typography---font-family--font-body, Poppins, sans-serif);
+  color: var(--n-333, #333);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.legal-page__back {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--neutral-color--n-500, #111);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+}
+
+.legal-page__back:hover {
+  text-decoration: underline;
+}
+
+.legal-page h1 {
+  font-family: var(--_typography---font-family--font-heading, Antonio, sans-serif);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 0 0 1.5rem;
+  color: var(--neutral-color--n-500, #111);
+}
+
+.legal-page h2 {
+  font-family: var(--_typography---font-family--font-heading, Antonio, sans-serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 2rem 0 0.75rem;
+  color: var(--neutral-color--n-500, #111);
+}
+
+.legal-page h3 {
+  font-family: var(--_typography---font-family--font-body, Poppins, sans-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem;
+  color: var(--neutral-color--n-500, #111);
+}
+
+.legal-page p,
+.legal-page li {
+  margin: 0 0 1rem;
+}
+
+.legal-page ul {
+  padding-left: 1.25rem;
+}
+
+.legal-page a {
+  color: inherit;
+}
+
+.legal-page__updated {
+  font-size: 0.875rem;
+  color: var(--neutral-color--n-400, #6a6a6a);
+  margin-bottom: 2rem;
+}
+
+.legal-page__footer-links {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--neutral-color--n-300, #e6e6e6);
+  font-size: 0.875rem;
+}
+
+.legal-page__footer-links a {
+  margin-right: 1rem;
+}
+
+.footer-legal__copy,
+.footer-legal__meta {
+  margin: 0 0 0.5rem;
+}
+
+.footer-legal__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.footer-legal__links a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-legal__meta a {
+  text-decoration: none;
+}
+
+.footer-legal__meta a:hover {
+  text-decoration: underline;
+}

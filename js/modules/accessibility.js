@@ -2,6 +2,8 @@
  * Progressive enhancement: labels, landmarks, decorative content, external links.
  * @param {Document} doc
  */
+import { SITE } from '../config/site-config.js';
+
 export function initAccessibility(doc = document) {
   ensureSkipLink(doc);
   enhanceContactForm(doc);
@@ -136,7 +138,37 @@ function enhanceFooterBrand(doc) {
  * @param {Document} doc
  */
 function enhanceExternalLinks(doc) {
-  doc.querySelectorAll('a[target="_blank"]').forEach((link) => {
+  const siteUrl = new URL(SITE.url);
+
+  doc.querySelectorAll('a[href]').forEach((link) => {
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:')) {
+      return;
+    }
+
+    let url;
+    try {
+      url = new URL(href, doc.baseURI);
+    } catch {
+      return;
+    }
+
+    if (url.protocol !== 'http:' && url.protocol !== 'https:') {
+      return;
+    }
+
+    const currentOrigin = new URL(doc.baseURI).origin;
+    const sitePathPrefix = siteUrl.pathname.replace(/\/$/, '') || '';
+    const isOwnSite =
+      url.hostname === siteUrl.hostname &&
+      (sitePathPrefix === '' || url.pathname.startsWith(sitePathPrefix));
+
+    if (url.origin === currentOrigin || isOwnSite) {
+      return;
+    }
+
+    link.setAttribute('target', '_blank');
+
     if (!link.getAttribute('rel')?.includes('noopener')) {
       link.setAttribute('rel', 'noopener noreferrer');
     }

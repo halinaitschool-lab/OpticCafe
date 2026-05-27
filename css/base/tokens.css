@@ -53,15 +53,10 @@ img {
   outline-offset: 3px;
 }
 
-.w-webflow-badge {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-}
-
 .contact__success,
 .contact__error,
+.form-message--success,
+.form-message--error,
 .w-form-done,
 .w-form-fail {
   display: none;

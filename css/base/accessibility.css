@@ -97,6 +97,10 @@ body {
     scroll-behavior: auto;
   }
 
+  .hero-loading-block {
+    display: none !important;
+  }
+
   *,
   *::before,
   *::after {
