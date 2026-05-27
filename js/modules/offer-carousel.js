@@ -1,4 +1,4 @@
-const DESKTOP_MEDIA = '(min-width: 992px)';
+const DESKTOP_MEDIA = '(min-width: 480px)';
 const NAV_DURATION = 0.45;
 const NAV_EASE = 'power1.inOut';
 const AUTO_SCROLL_MS = 2250;

@@ -1,4 +1,5 @@
 import { initAccessibility } from './modules/accessibility.js';
+import { initCookieConsent } from './modules/cookie-consent.js';
 import { initContactForm } from './modules/form.js';
 import { initNavigation } from './modules/navigation.js';
 import { initOfferCarousel } from './modules/offer-carousel.js';
@@ -11,6 +12,7 @@ function bootstrap() {
   initNavigation();
   initContactForm();
   initAccessibility();
+  initCookieConsent();
   initOfferCarousel();
   injectLocalBusinessSchema();
 }
