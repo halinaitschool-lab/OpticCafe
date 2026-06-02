@@ -28,7 +28,7 @@ export const SITE = {
   fonts: ['Antonio:300,400,500,600,700', 'Poppins:300,400,500,600,700'],
   socialImage: 'images/cafe.jpg',
   favicon: 'images/icon.jpeg',
-  appleTouchIcon: 'images/logo.jpeg',
+  appleTouchIcon: 'images/logo_optic_cafe.jpeg',
   openingHours: ['Mo-Fr 10:00-18:00', 'Sa 10:00-14:00'],
   services: [
     {

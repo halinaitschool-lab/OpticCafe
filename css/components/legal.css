@@ -154,14 +154,6 @@
 
   .footer-legal__links {
     align-items: center;
-    gap: 0.75rem;
-  }
-
-  .footer-legal__links a,
-  .footer-legal__phone {
-    display: inline-block;
-    min-height: 44px;
-    line-height: 44px;
   }
 }
 
