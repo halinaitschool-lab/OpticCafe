@@ -8,6 +8,17 @@
 @import 'components/process-section.css';
 @import 'components/legal.css';
 
+picture.work-image {
+  display: block;
+}
+
+picture.work-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 15%;
+}
+
 @media (min-width: 992px) {
   html.w-mod-js:not(.w-mod-ix) [data-w-id='8fbe59d2-58b6-c124-9a2e-a81d5c7acb8d'] {
     transform: translate3d(0, -69%, 0);

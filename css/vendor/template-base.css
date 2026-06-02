@@ -3909,7 +3909,7 @@ h6 {
   }
 
   .hero-section {
-    padding-top: 60px;
+    padding-top: 1rem;
   }
 
   .hero-background-block {
@@ -3922,13 +3922,11 @@ h6 {
   }
 
   .hero-inner-block {
-    grid-column-gap: 48px;
-    grid-row-gap: 48px;
-    flex-flow: column;
+    height: 30%;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: auto;
     display: flex;
   }
 
@@ -3975,7 +3973,7 @@ h6 {
   }
 
   .about-heading {
-    font-size: var(--_typography---heading--h4);
+    font-size: 2rem;
   }
 
   .about-text-block {
@@ -4189,21 +4187,21 @@ h6 {
   }
 
   .single-hero-block {
+    height: 43%;
     justify-content: flex-start;
     align-items: flex-start;
   }
 
   .single-hero-inner-block {
-    gap: 33px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   .single-hero-inner-block > .div-block-2 {
-    flex: 2;
+    width: 70%;
   }
 
   .single-hero-flex-2 {
@@ -4326,17 +4324,12 @@ h6 {
     height: 20px;
   }
 
-  .hero-inner-block {
-    grid-column-gap: 62px;
-    grid-row-gap: 62px;
-  }
-
   .hero-heading {
     font-size: 204px;
   }
 
   .about-heading {
-    font-size: var(--_typography---heading--h5);
+    font-size: 2 rem;
   }
 
   .about-text-block {
@@ -4626,13 +4619,8 @@ h6 {
 
   .hero-section {
     flex-flow: column;
-    padding-top: 40px;
+    padding-top: 1.5rem;
     display: block;
-  }
-
-  .hero-inner-block {
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
   }
 
   .hero-flex-1 {
@@ -4666,7 +4654,7 @@ h6 {
   }
 
   .about-heading {
-    font-size: var(--_typography---heading--h5);
+    font-size: 1.8rem;
   }
 
   .about-text-block {
@@ -4859,9 +4847,7 @@ h6 {
   }
 
   .single-hero-inner-block {
-    gap: 2rem;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
   }
 
@@ -4878,7 +4864,7 @@ h6 {
   }
 
   .single-hero-text-2 {
-    font-size: var(--_typography---bodytext--b2);
+    font-size: 0.9rem;
     text-align: center;
     margin-top: 20px;
   }
