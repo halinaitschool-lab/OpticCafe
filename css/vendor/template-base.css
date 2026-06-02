@@ -4854,9 +4854,8 @@ h6 {
   }
 
   .single-hero-inner-block {
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    flex-flow: column;
+    gap: 0px;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
   }

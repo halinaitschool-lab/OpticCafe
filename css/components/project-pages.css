@@ -1,0 +1,19 @@
+.single-hero-inner-block .image {
+  object-fit: contain;
+  width: 27%;
+  height: auto;
+  display: block;
+  flex: 0 0 auto;
+}
+
+.single-hero-inner-block > a {
+  display: block;
+  flex: 0 0 auto;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .single-hero-inner-block .image {
+    width: 4rem;
+  }
+}
