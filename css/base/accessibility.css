@@ -71,7 +71,9 @@ body {
   border: 1px solid #080808;
   border-radius: 50%;
   background: transparent;
-  transition: background-color var(--transition-base), transform var(--transition-base);
+  transition:
+    background-color var(--transition-base),
+    transform var(--transition-base);
 }
 
 .offer-carousel__dot:hover::after,

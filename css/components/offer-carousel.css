@@ -61,7 +61,9 @@
   color: #080808;
   cursor: pointer;
   transform: translateY(-50%);
-  transition: background-color var(--transition-base), transform var(--transition-base);
+  transition:
+    background-color var(--transition-base),
+    transform var(--transition-base);
 }
 
 .offer-carousel__arrow:hover:not(:disabled) {

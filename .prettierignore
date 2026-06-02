@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+
+# Vendor / generated / large files
+css/vendor/
+js/vendor/
+
+# Images / binary
+images/
+
+# Minified third-party assets already formatted
+**/*.min.js

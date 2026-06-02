@@ -3498,12 +3498,13 @@ h6 {
 }
 
 .single-hero-inner-block {
-  flex-flow: column;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   width: 26%;
   height: 80%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .single-hero-flex-2 {
@@ -3846,6 +3847,7 @@ h6 {
 
   .navbar-link {
     color: var(--neutral-color--n-100);
+    width: 100%;
   }
 
   .navbar-link.first {
@@ -4192,13 +4194,16 @@ h6 {
   }
 
   .single-hero-inner-block {
-    grid-column-gap: 33px;
-    grid-row-gap: 33px;
-    flex-flow: row;
+    gap: 33px;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: auto;
+  }
+
+  .single-hero-inner-block > .div-block-2 {
+    flex: 2;
   }
 
   .single-hero-flex-2 {
@@ -4854,10 +4859,14 @@ h6 {
   }
 
   .single-hero-inner-block {
-    gap: 0px;
+    gap: 2rem;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  .single-hero-inner-block > a {
+    text-align: center;
   }
 
   .single-hero-flex-2 {

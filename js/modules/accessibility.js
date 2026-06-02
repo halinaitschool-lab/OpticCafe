@@ -87,8 +87,12 @@ function enhanceContactForm(doc) {
  */
 function enhanceOfferCards(doc) {
   doc.querySelectorAll('.offer-card.project-item, a.offer-card').forEach((link) => {
-    const title = link.querySelector('.offer-card__title, .project-item-title')?.textContent?.trim();
-    const category = link.querySelector('.offer-card__category, .project-item-category')?.textContent?.trim();
+    const title = link
+      .querySelector('.offer-card__title, .project-item-title')
+      ?.textContent?.trim();
+    const category = link
+      .querySelector('.offer-card__category, .project-item-category')
+      ?.textContent?.trim();
 
     if (title) {
       link.setAttribute('aria-label', category ? `${title} — ${category}` : title);
