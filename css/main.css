@@ -20,6 +20,10 @@ picture.work-image img {
 }
 
 @media (min-width: 992px) {
+  picture.work-image img {
+    object-position: center center;
+  }
+
   html.w-mod-js:not(.w-mod-ix) [data-w-id='8fbe59d2-58b6-c124-9a2e-a81d5c7acb8d'] {
     transform: translate3d(0, -69%, 0);
   }
