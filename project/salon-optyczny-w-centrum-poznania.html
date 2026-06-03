@@ -86,11 +86,21 @@
             <div class="single-hero-background-block">
               <div class="single-hero-bg-block-1"></div>
               <div class="single-hero-bg-block-2">
-                <img
-                  src="../images/1.jpg"
-                  alt="Salon optyczny Optic Café w centrum Poznania"
-                  class="single-hero-background-image"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="../images/1.jpg"
+                  />
+                  <source
+                    media="(max-width: 991px)"
+                    srcset="../images/tablet/1_salon.jpg"
+                  />
+                  <img
+                    src="../images/1.jpg"
+                    alt="Salon optyczny Optic Café w centrum Poznania"
+                    class="single-hero-background-image"
+                  />
+                </picture>
               </div>
             </div>
             <section class="single-hero-section">

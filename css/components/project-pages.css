@@ -1,3 +1,15 @@
+.single-hero-bg-block-2 picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  flex: none;
+}
+
+.single-hero-bg-block-2 picture img {
+  width: 100%;
+  height: 100%;
+}
+
 .single-hero-inner-block .image {
   object-fit: contain;
   width: 27%;

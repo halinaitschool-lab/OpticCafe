@@ -86,11 +86,21 @@
             <div class="single-hero-background-block">
               <div class="single-hero-bg-block-1"></div>
               <div class="single-hero-bg-block-2">
-                <img
-                  src="../images/2.jpg"
-                  alt="Badania wzroku i optometria w Optic Café"
-                  class="single-hero-background-image"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="../images/2.jpg"
+                  />
+                  <source
+                    media="(max-width: 991px)"
+                    srcset="../images/tablet/2_badania.jpg"
+                  />
+                  <img
+                    src="../images/2.jpg"
+                    alt="Badania wzroku i optometria w Optic Café"
+                    class="single-hero-background-image"
+                  />
+                </picture>
               </div>
             </div>
             <section class="single-hero-section">
