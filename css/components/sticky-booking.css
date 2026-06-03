@@ -1,0 +1,73 @@
+.sticky-booking {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  bottom: auto;
+  z-index: 9990;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.625rem 1rem;
+  border: 0.0625rem solid var(--neutral-color--n-500, #080808);
+  background-color: var(--neutral-color--n-500, #080808);
+  color: var(--neutral-color--n-100, #fff);
+  font-family: var(--_typography---font-family--font-body, Poppins, sans-serif);
+  font-size: var(--_typography---bodytext--b2, 1rem);
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-0.5rem);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease;
+  pointer-events: none;
+}
+
+.sticky-booking:hover {
+  opacity: 0.9;
+  color: var(--neutral-color--n-100, #fff);
+}
+
+.sticky-booking--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.sticky-booking:focus-visible {
+  outline: 0.1875rem solid var(--neutral-color--n-100, #fff);
+  outline-offset: 0.125rem;
+}
+
+/* Phone: bottom right */
+@media screen and (max-width: 767px) {
+  .sticky-booking {
+    top: auto;
+    right: 1rem;
+    bottom: 1rem;
+    transform: translateY(0.5rem);
+    font-size: var(--_typography---bodytext--b3, 0.875rem);
+    padding: 0.625rem 0.875rem;
+  }
+
+  .sticky-booking--visible {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sticky-booking {
+    transition: none;
+    transform: none;
+  }
+
+  .sticky-booking--visible {
+    transform: none;
+  }
+}

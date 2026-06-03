@@ -2165,10 +2165,6 @@ h6 {
   color: red;
 }
 
-.navbar-link.first {
-  color: var(--neutral-color--n-100);
-}
-
 .navbar-link.first.w--current {
   color: var(--neutral-color--n-500);
   line-height: var(--_typography---height-1em);
