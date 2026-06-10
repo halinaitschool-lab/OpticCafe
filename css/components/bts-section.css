@@ -16,3 +16,19 @@
     height: 420vh;
   }
 }
+
+/* Prevent iOS flicker: transform inner track, not sticky parent children directly */
+.bts-section {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.bts-text-inner {
+  display: inline-block;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
