@@ -1,3 +1,4 @@
+import { initBtsScroll } from './modules/bts-scroll.js';
 import { initAccessibility } from './modules/accessibility.js';
 import { initCookieConsent } from './modules/cookie-consent.js';
 import { initContactForm } from './modules/form.js';
@@ -15,6 +16,7 @@ function bootstrap() {
   initAccessibility();
   initCookieConsent();
   initStickyBooking();
+  initBtsScroll();
   initOfferCarousel();
   injectLocalBusinessSchema();
 }

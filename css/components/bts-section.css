@@ -1,0 +1,18 @@
+/* More scroll runway on smaller screens — time to read the full quote */
+@media screen and (max-width: 991px) {
+  .bts-scroll-block {
+    height: 320vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bts-scroll-block {
+    height: 380vh;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .bts-scroll-block {
+    height: 420vh;
+  }
+}
