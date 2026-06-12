@@ -1,3 +1,10 @@
+@media screen and (min-width: 992px) {
+  html[data-wf-item-slug='salon-optyczny-w-centrum-poznania'] .single-hero-background-image,
+  html[data-wf-item-slug='optometria-i-badania-wzroku'] .single-hero-background-image {
+    object-position: top;
+  }
+}
+
 .single-hero-bg-block-2 picture {
   display: block;
   width: 100%;

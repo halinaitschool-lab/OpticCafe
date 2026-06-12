@@ -12,11 +12,13 @@ export function initBtsScroll(doc = document) {
   if (!block || !line1 || !line2 || !viewport) return;
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const desktopMedia = window.matchMedia('(min-width: 992px)');
   let ticking = false;
   let scrollStart = 0;
   let scrollEnd = 0;
   let overflow1 = 0;
   let overflow2 = 0;
+  let line1StartX = 0;
   let lastX1 = null;
   let lastX2 = null;
 
@@ -34,8 +36,20 @@ export function initBtsScroll(doc = document) {
     scrollEnd = scrollStart + Math.max(0, scrollable);
     overflow1 = getOverflowPx(line1, viewport);
     overflow2 = getOverflowPx(line2, viewport);
+    line1StartX = desktopMedia.matches ? Math.round(viewport.clientWidth * 0.3) : 0;
     lastX1 = null;
     lastX2 = null;
+  }
+
+  function getLine1X(line1Progress) {
+    if (!overflow1) return line1StartX * (1 - line1Progress);
+
+    const endX = -overflow1;
+    if (desktopMedia.matches) {
+      return Math.round(line1StartX * (1 - line1Progress) + endX * line1Progress);
+    }
+
+    return Math.round(endX * line1Progress);
   }
 
   function getScrollProgress() {
@@ -59,7 +73,7 @@ export function initBtsScroll(doc = document) {
     const line1Progress = clamp(progress / 0.65, 0, 1);
     const line2Progress = clamp((progress - 0.12) / 0.78, 0, 1);
 
-    const x1 = overflow1 ? -Math.round(overflow1 * line1Progress) : 0;
+    const x1 = getLine1X(line1Progress);
     const x2 = overflow2 ? Math.round(overflow2 * line2Progress) : 0;
 
     if (x1 !== lastX1) {
@@ -103,6 +117,7 @@ export function initBtsScroll(doc = document) {
 
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', scheduleLayoutMeasure, { passive: true });
+  desktopMedia.addEventListener?.('change', scheduleLayoutMeasure);
 
   if (doc.fonts?.ready) {
     doc.fonts.ready.then(scheduleLayoutMeasure);
