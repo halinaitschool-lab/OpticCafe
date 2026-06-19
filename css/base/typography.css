@@ -1,0 +1,41 @@
+:root {
+  /* Minimize font-size variety: 3-step scale */
+  --type-size-1: 1rem; /* body / long text */
+  --type-size-2: 1.25rem; /* small headings / UI emphasis */
+  --type-size-3: clamp(2rem, 5vw, 3rem); /* main headings */
+
+  /* Webflow template variables (overrides) */
+  --_typography---bodytext--b1: var(--type-size-1);
+  --_typography---bodytext--b2: var(--type-size-1);
+  --_typography---bodytext--b3: var(--type-size-1);
+
+  --_typography---heading--h1: var(--type-size-3);
+  --_typography---heading--h2: var(--type-size-3);
+  --_typography---heading--h3: var(--type-size-3);
+  --_typography---heading--h4: var(--type-size-2);
+  --_typography---heading--h5: var(--type-size-2);
+  --_typography---heading--h6: var(--type-size-2);
+
+  /* Line-height normalization */
+  --_typography---height-1em: 1;
+  --_typography---height-1-2em: 1.2;
+  --_typography---height-1-3em: 1.3;
+  --_typography---height-1-4em: 1.4;
+}
+
+body {
+  font-size: var(--type-size-1);
+  line-height: var(--_typography---height-1-4em);
+}
+
+h1,
+h2,
+h3 {
+  line-height: var(--_typography---height-1-2em);
+}
+
+h4,
+h5,
+h6 {
+  line-height: var(--_typography---height-1-3em);
+}
