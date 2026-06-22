@@ -19,6 +19,8 @@ export function initBtsScroll(doc = document) {
   let overflow1 = 0;
   let overflow2 = 0;
   let line1StartX = 0;
+  let line2StartX = 0;
+  let line2EndX = 0;
   let lastX1 = null;
   let lastX2 = null;
 
@@ -31,12 +33,35 @@ export function initBtsScroll(doc = document) {
   }
 
   function measureLayout() {
+    setShift(line1, 0);
+    setShift(line2, 0);
+
     const scrollable = block.offsetHeight - window.innerHeight;
-    scrollStart = block.offsetTop;
+    scrollStart = block.getBoundingClientRect().top + window.scrollY;
     scrollEnd = scrollStart + Math.max(0, scrollable);
     overflow1 = getOverflowPx(line1, viewport);
     overflow2 = getOverflowPx(line2, viewport);
     line1StartX = desktopMedia.matches ? Math.round(viewport.clientWidth * 0.3) : 0;
+
+    if (desktopMedia.matches) {
+      const viewportRect = viewport.getBoundingClientRect();
+      const styles = getComputedStyle(viewport);
+      const padLeft = parseFloat(styles.paddingLeft) || 0;
+      const line2Rect = line2.getBoundingClientRect();
+      const centerX = viewportRect.left + viewportRect.width / 2;
+      const clipLeft = viewportRect.left + padLeft;
+
+      // Start: last letter at screen center
+      line2StartX = Math.round(centerX - line2Rect.right);
+      // End: first letters ("A zmysły…") visible on the left inside padding
+      line2EndX = Math.round(clipLeft - line2Rect.left);
+      // Safety: always shift enough to reveal full line width
+      line2EndX = Math.max(line2EndX, overflow2);
+    } else {
+      line2StartX = 0;
+      line2EndX = overflow2;
+    }
+
     lastX1 = null;
     lastX2 = null;
   }
@@ -50,6 +75,14 @@ export function initBtsScroll(doc = document) {
     }
 
     return Math.round(endX * line1Progress);
+  }
+
+  function getLine2X(line2Progress) {
+    if (!desktopMedia.matches) {
+      return overflow2 ? Math.round(overflow2 * line2Progress) : 0;
+    }
+
+    return Math.round(line2StartX + (line2EndX - line2StartX) * line2Progress);
   }
 
   function getScrollProgress() {
@@ -71,10 +104,12 @@ export function initBtsScroll(doc = document) {
 
     const progress = getScrollProgress();
     const line1Progress = clamp(progress / 0.65, 0, 1);
-    const line2Progress = clamp((progress - 0.12) / 0.78, 0, 1);
+    const line2Progress = desktopMedia.matches
+      ? clamp(progress / 0.65, 0, 1)
+      : clamp((progress - 0.12) / 0.78, 0, 1);
 
     const x1 = getLine1X(line1Progress);
-    const x2 = overflow2 ? Math.round(overflow2 * line2Progress) : 0;
+    const x2 = getLine2X(line2Progress);
 
     if (x1 !== lastX1) {
       setShift(line1, x1);

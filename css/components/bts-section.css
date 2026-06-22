@@ -32,3 +32,12 @@
   backface-visibility: hidden;
   -webkit-font-smoothing: antialiased;
 }
+
+@media screen and (min-width: 992px) {
+  .bts-text._1,
+  .bts-text._2 {
+    overflow: visible;
+    width: max-content;
+    max-width: none;
+  }
+}
