@@ -148,6 +148,12 @@
   height: 100%;
 }
 
+@media (max-width: 767px) {
+  .offer-card__desc.project-item-date{
+    text-align: center;
+  }
+}
+
 @media (max-width: 479px) {
   .offer-carousel__arrow,
   .offer-carousel__dots {
