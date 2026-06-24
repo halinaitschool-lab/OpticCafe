@@ -49,7 +49,11 @@ export function injectLocalBusinessSchema(doc = document) {
         },
       })),
     },
-    sameAs: [SITE.mapsUrl, SITE.bookingUrl],
+    sameAs: [
+      SITE.mapsUrl,
+      SITE.bookingUrl,
+      ...(SITE.social?.map((profile) => profile.url) ?? []),
+    ],
     inLanguage: SITE.language,
   };
 

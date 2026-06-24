@@ -1,0 +1,23 @@
+/* Contact details — two columns on desktop: mail+tel | address+social */
+@media (min-width: 992px) {
+  .contact-flex-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .contact-flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-flex-col {
+    display: contents;
+  }
+}

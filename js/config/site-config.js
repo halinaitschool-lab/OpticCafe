@@ -25,6 +25,23 @@ export const SITE = {
   },
   mapsUrl:
     'https://www.google.com/maps/place/Salon+optyczny+-+Optic+Cafe+Olaf+Tabaczy%C5%84ski/@52.4081365,16.9351542,17z',
+  social: [
+    {
+      id: 'instagram',
+      url: 'https://www.instagram.com/optic_cafe/',
+      label: 'Instagram Optic Café',
+    },
+    {
+      id: 'facebook',
+      url: 'https://www.facebook.com/OpticCafeOlafTabaczynski/',
+      label: 'Facebook Optic Café',
+    },
+    {
+      id: 'youtube',
+      url: 'https://www.youtube.com/@OPTIC-CAFE',
+      label: 'YouTube Optic Café',
+    },
+  ],
   fonts: ['Antonio:300,400,500,600,700', 'Poppins:300,400,500,600,700'],
   socialImage: 'images/cafe.jpg',
   favicon: 'images/icon.jpeg',

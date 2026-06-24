@@ -89,6 +89,7 @@ body {
 .button-primary-2:focus-visible,
 .navbar-link:focus-visible,
 .footer-link:focus-visible,
+.social-links__item:focus-visible,
 .offer-card:focus-visible {
   outline: 2px solid var(--a11y-focus-color);
   outline-offset: 3px;
