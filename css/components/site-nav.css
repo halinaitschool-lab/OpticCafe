@@ -3,3 +3,18 @@
     transition: none !important;
   }
 }
+
+/* Address & phone links — same hover as menu items */
+.hero-text-2,
+.contact-text-3,
+.footer-legal__meta a {
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.hero-text-2:hover,
+.contact-text-3:hover,
+.footer-legal__meta a:hover {
+  opacity: 0.55;
+  color: red;
+  text-decoration: none;
+}
