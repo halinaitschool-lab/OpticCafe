@@ -13,10 +13,15 @@
 
 .process-image {
   width: auto;
-  max-width: min(34vw, 400px);
+  max-width: min(20vw, 400px);
   height: auto;
   max-height: min(52vh, 480px);
   object-fit: cover;
+}
+
+.process-item-title:not(.options) {
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 @media (max-width: 991px) {

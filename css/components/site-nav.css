@@ -1,0 +1,5 @@
+@media (max-width: 991px) {
+  .navbar-menu-block.navbar-menu-block--instant {
+    transition: none !important;
+  }
+}
