@@ -1,5 +1,4 @@
 /* Offer cards — always show caption overlay (not only on hover) */
-.offer-card .project-item-shadow,
 .offer-card .project-item-category,
 .offer-card .project-item-title,
 .offer-card .project-item-date,
@@ -9,6 +8,13 @@
   opacity: 1 !important;
   visibility: visible !important;
   transform: none !important;
+}
+
+.offer-card .project-item-shadow {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  transition: opacity var(--transition-base, 0.25s ease);
 }
 
 .offer-carousel {
@@ -152,6 +158,23 @@
   display: none;
 }
 
+/* Desktop carousel: default uses shadow only; hover lifts overlay for a brighter image */
+@media (hover: hover) and (min-width: 480px) {
+  .offer-carousel--gsap .offer-card {
+    cursor: pointer;
+  }
+
+  .offer-carousel--gsap .offer-card:is(:hover, :focus-visible) .project-item-shadow {
+    opacity: 0.25 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .offer-card .project-item-shadow {
+    transition: none;
+  }
+}
+
 @media (max-width: 767px) {
   .offer-carousel .project-collection-item {
     height: auto;
@@ -213,7 +236,7 @@
     justify-content: center;
     margin: 0.25rem 0.5rem 0.75rem;
     min-height: 2.2rem;
-    padding: 0.5rem 0.9rem;
+    padding: 0.625rem 0.875rem;
     border: 1px solid var(--neutral-color--n-500, #080808);
     color: var(--neutral-color--n-100, #fff);
     background: var(--neutral-color--n-500, #080808);
