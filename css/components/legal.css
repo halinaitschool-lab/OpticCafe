@@ -152,9 +152,14 @@
   .footer-section,
   .footer-container,
   .footer-block {
+    gap: 4rem;
     height: auto;
     min-height: 0;
     overflow: visible;
+  }
+  
+  .footer-block {
+    padding-bottom: 70px;
   }
 
   .footer-legal {
@@ -175,6 +180,7 @@
     margin: 0;
     text-align: center;
     align-items: center;
+    grid-row-gap: 16px;
   }
 
   .footer-legal__column {
@@ -186,7 +192,7 @@
 
   .footer-legal__links {
     align-items: center;
-    gap: 0.3rem;
+    gap: 16px;
   }
 
   .footer-legal__credit {

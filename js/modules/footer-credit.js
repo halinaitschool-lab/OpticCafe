@@ -16,13 +16,13 @@ export function initFooterCredit(doc = document) {
     link.className = 'footer-link footer-legal__credit-link';
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
-    link.textContent = developer.name;
+    link.textContent = `${creditText} — ${developer.name}`;
     link.setAttribute(
       'aria-label',
       `${creditText} — ${developer.name} (otwiera się w nowej karcie)`,
     );
 
-    slot.append(`${creditText} — `, link);
+    slot.append(link);
     slot.hidden = false;
   });
 }

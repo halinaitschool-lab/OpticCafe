@@ -4419,6 +4419,7 @@ h6 {
   .footer-flex-2 {
     grid-column-gap: 20px;
     flex-flow: column;
+    gap: 1.2rem;
   }
 
   .footer-flex-3 {
@@ -4429,6 +4430,7 @@ h6 {
   .footer-text-1 {
     line-height: var(--_typography---height-1-3em);
     text-align: center;
+    grid-row-gap: 16px;
   }
 
   ._404-inner-block {

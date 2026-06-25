@@ -36,6 +36,10 @@
 }
 
 @media (max-width: 991px) {
+  .contact-flex-1 {
+    gap: 1.25rem;
+  }
+
   .contact-flex-col {
     display: contents;
   }
@@ -43,11 +47,17 @@
 
 @media (max-width: 767px) {
   .contact-flex-1 {
-    gap: 0.875rem;
+    gap: 1.1rem;
   }
 
   .contact-flex-2 {
     gap: 0.35rem;
+  }
+
+  /* Hide "SOCIAL MEDIA" row in contact block on phones */
+  .contact-flex-1 > .contact-flex-2:last-child,
+  .contact-flex-1 > .contact-flex-col:last-child > .contact-flex-2:last-child {
+    display: none;
   }
 
   .contact-form .button-primary.contact {
