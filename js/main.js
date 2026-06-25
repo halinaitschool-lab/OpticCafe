@@ -1,4 +1,5 @@
 import { initBtsScroll } from './modules/bts-scroll.js';
+import { initHeroMarquee } from './modules/hero-marquee.js';
 import { initAccessibility } from './modules/accessibility.js';
 import { initCookieConsent } from './modules/cookie-consent.js';
 import { initContactForm } from './modules/form.js';
@@ -21,6 +22,7 @@ function bootstrap() {
   initSocialLinks();
   initFooterCredit();
   initBtsScroll();
+  initHeroMarquee();
   initOfferCarousel();
   injectLocalBusinessSchema();
 }
