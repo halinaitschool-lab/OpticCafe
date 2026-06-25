@@ -42,6 +42,11 @@ export const SITE = {
       label: 'YouTube Optic Café',
     },
   ],
+  developer: {
+    name: 'HIT LAB',
+    url: 'https://hit.hlusik.workers.dev/en/',
+    creditText: 'Realizacja i wdrożenie strony',
+  },
   fonts: ['Antonio:300,400,500,600,700', 'Poppins:300,400,500,600,700'],
   socialImage: 'images/cafe.jpg',
   favicon: 'images/icon.jpeg',

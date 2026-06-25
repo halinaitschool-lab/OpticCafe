@@ -6,9 +6,13 @@
 }
 
 .process-image-block {
+  position: static;
+  width: 100%;
+  height: auto;
   z-index: 1;
   justify-content: center;
   align-items: center;
+  margin-block: 0.75rem;
 }
 
 .process-image {
@@ -32,6 +36,10 @@
 }
 
 @media (max-width: 767px) {
+  .process-image-block {
+    margin-block: 0.5rem;
+  }
+
   .process-image {
     max-width: min(72vw, 280px);
     max-height: min(42vh, 340px);

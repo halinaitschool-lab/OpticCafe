@@ -1,4 +1,23 @@
 /* Contact details — two columns on desktop: mail+tel | address+social */
+.contact-form .button-primary.contact {
+  min-height: 2.75rem;
+  padding: 0.625rem 1rem;
+  border: 0.0625rem solid var(--neutral-color--n-500, #080808);
+  background-color: var(--neutral-color--n-500, #080808);
+  color: var(--neutral-color--n-100, #fff);
+  font-family: var(--_typography---font-family--font-body, Poppins, sans-serif);
+  font-size: var(--_typography---bodytext--b2, 1rem);
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.18);
+}
+
+.contact-form .button-primary.contact:hover {
+  opacity: 0.9;
+  color: var(--neutral-color--n-100, #fff);
+}
+
 @media (min-width: 992px) {
   .contact-flex-1 {
     display: grid;
@@ -19,5 +38,23 @@
 @media (max-width: 991px) {
   .contact-flex-col {
     display: contents;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-flex-1 {
+    gap: 0.875rem;
+  }
+
+  .contact-flex-2 {
+    gap: 0.35rem;
+  }
+
+  .contact-form .button-primary.contact {
+    width: 100%;
+    min-height: 2.75rem;
+    margin-top: 0.875rem;
+    padding: 0.625rem 1rem;
+    justify-content: center;
   }
 }
