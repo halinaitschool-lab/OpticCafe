@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://halinaitschool-lab.github.io/OpticCafe/sitemap.xml
+Sitemap: https://www.optic-cafe.pl/sitemap.xml

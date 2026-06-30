@@ -1,42 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://halinaitschool-lab.github.io/OpticCafe/</loc>
+    <loc>https://www.optic-cafe.pl/</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://halinaitschool-lab.github.io/OpticCafe/project/salon-optyczny-w-centrum-poznania.html</loc>
+    <loc>https://www.optic-cafe.pl/project/salon-optyczny-w-centrum-poznania.html</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://halinaitschool-lab.github.io/OpticCafe/project/optometria-i-badania-wzroku.html</loc>
+    <loc>https://www.optic-cafe.pl/project/optometria-i-badania-wzroku.html</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://halinaitschool-lab.github.io/OpticCafe/project/ortoptyka-i-rehabilitacja-widzenia.html</loc>
+    <loc>https://www.optic-cafe.pl/project/ortoptyka-i-rehabilitacja-widzenia.html</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://halinaitschool-lab.github.io/OpticCafe/project/nowoczesne-rozwiazania-dla-korekcji-wzroku.html</loc>
+    <loc>https://www.optic-cafe.pl/project/nowoczesne-rozwiazania-dla-korekcji-wzroku.html</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://halinaitschool-lab.github.io/OpticCafe/project/dobor-opraw-okularowych.html</loc>
+    <loc>https://www.optic-cafe.pl/project/dobor-opraw-okularowych.html</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://halinaitschool-lab.github.io/OpticCafe/polityka-prywatnosci.html</loc>
+    <loc>https://www.optic-cafe.pl/project/od-dzieci-po-seniorow.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.optic-cafe.pl/polityka-prywatnosci.html</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://halinaitschool-lab.github.io/OpticCafe/cookies.html</loc>
+    <loc>https://www.optic-cafe.pl/cookies.html</loc>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

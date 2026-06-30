@@ -5,7 +5,8 @@ import { initCookieConsent } from './modules/cookie-consent.js';
 import { initContactForm } from './modules/form.js';
 import { initNavigation } from './modules/navigation.js';
 import { initOfferCarousel } from './modules/offer-carousel.js';
-import { injectLocalBusinessSchema } from './modules/schema.js';
+import { initSeo } from './modules/seo.js';
+import { injectStructuredData } from './modules/schema.js';
 import { initFooterCredit } from './modules/footer-credit.js';
 import { initSocialLinks } from './modules/social-links.js';
 import { initStickyBooking } from './modules/sticky-booking.js';
@@ -24,7 +25,8 @@ function bootstrap() {
   initBtsScroll();
   initHeroMarquee();
   initOfferCarousel();
-  injectLocalBusinessSchema();
+  initSeo();
+  injectStructuredData();
 }
 
 if (document.readyState === 'loading') {

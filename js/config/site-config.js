@@ -8,7 +8,19 @@ export const SITE = {
     'Salon optyczny w centrum Poznania. Badania wzroku, terapia widzenia, dobór opraw i soczewek okularowych. Umów wizytę u optometrysty i ortoptystki.',
   locale: 'pl_PL',
   language: 'pl',
-  url: 'https://halinaitschool-lab.github.io/OpticCafe',
+  url: 'https://www.optic-cafe.pl',
+  alternateNames: [
+    'Optic Cafe',
+    'Optic Cafe Poznań',
+    'Optic Café Poznań',
+    'Salon optyczny Optic Cafe',
+  ],
+  seo: {
+    /** Paste token from Google Search Console → HTML tag method */
+    googleSiteVerification: '',
+    /** Paste token from Bing Webmaster Tools */
+    bingSiteVerification: '',
+  },
   email: 'maestro@awm.pl',
   phone: '+48690910091',
   phoneDisplay: '+48 690 91 00 91',
@@ -48,8 +60,8 @@ export const SITE = {
     creditText: 'Realizacja i wdrożenie strony',
   },
   fonts: ['Antonio:300,400,500,600,700', 'Poppins:300,400,500,600,700'],
-  socialImage: 'images/cafe.jpg',
-  favicon: 'images/icon.jpeg',
+  socialImage: 'images/hero/1.jpg',
+  favicon: 'images/logo_optic_cafe.jpeg',
   appleTouchIcon: 'images/logo_optic_cafe.jpeg',
   openingHours: ['Mo-Fr 10:00-18:00', 'Sa 10:00-14:00'],
   services: [
@@ -77,6 +89,11 @@ export const SITE = {
       slug: 'dobor-opraw-okularowych',
       name: 'Dobór opraw',
       category: 'Stylizacja',
+    },
+    {
+      slug: 'od-dzieci-po-seniorow',
+      name: 'Od dzieci po seniorów',
+      category: 'Opieka okulistyczna',
     },
   ],
 };
