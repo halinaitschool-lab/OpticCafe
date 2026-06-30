@@ -17,7 +17,7 @@ export const SITE = {
   ],
   seo: {
     /** Paste token from Google Search Console → HTML tag method */
-    googleSiteVerification: '',
+    googleSiteVerification: 'vobWmK1pd11XXN4cdrhFs42aCK7MIG_34pgbwwyLyrI',
     /** Paste token from Bing Webmaster Tools */
     bingSiteVerification: '',
   },
