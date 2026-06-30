@@ -151,8 +151,3 @@ function appendJsonLd(doc, key, schema) {
   script.textContent = JSON.stringify(schema);
   doc.head.appendChild(script);
 }
-
-/** @deprecated Use injectStructuredData */
-export function injectLocalBusinessSchema(doc = document) {
-  injectStructuredData(doc);
-}

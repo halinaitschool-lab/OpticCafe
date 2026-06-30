@@ -15,12 +15,12 @@ import { initStickyBooking } from './modules/sticky-booking.js';
  * Application bootstrap — single responsibility: wire modules on DOM ready.
  */
 function bootstrap() {
+  initCookieConsent();
   initNavigation();
   initContactForm();
-  initAccessibility();
-  initCookieConsent();
-  initStickyBooking();
   initSocialLinks();
+  initAccessibility();
+  initStickyBooking();
   initFooterCredit();
   initBtsScroll();
   initHeroMarquee();
