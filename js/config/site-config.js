@@ -55,8 +55,8 @@ export const SITE = {
     },
   ],
   developer: {
-    name: 'HIT LAB',
-    url: 'https://hit.hlusik.workers.dev/en/',
+    name: 'Halina IT',
+    url: 'https://halinait.com/',
     creditText: 'Realizacja i wdrożenie strony',
   },
   fonts: ['Antonio:300,400,500,600,700', 'Poppins:300,400,500,600,700'],
